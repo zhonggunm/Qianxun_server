@@ -1,4 +1,4 @@
-package springfive.cms.domain.resources;
+package com.zhong.myapp.doc_service.domain.resources;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,11 +11,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.zhong.myapp.doc_service.domain.models.Category;
+import com.zhong.myapp.doc_service.domain.service.CategoryService;
+import com.zhong.myapp.doc_service.domain.vo.CategoryRequest;
+
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import springfive.cms.domain.models.Category;
-import springfive.cms.domain.service.CategoryService;
-import springfive.cms.domain.vo.CategoryRequest;
 
 /**
  * @author claudioed on 28/10/17. Project cms

@@ -1,7 +1,8 @@
-package springfive.cms.domain.repository;
+package com.zhong.myapp.doc_service.domain.repository;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
-import springfive.cms.domain.models.News;
+
+import com.zhong.myapp.doc_service.domain.models.News;
 
 /**
  * @author claudioed on 14/11/17. Project cms

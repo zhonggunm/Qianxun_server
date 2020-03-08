@@ -1,4 +1,4 @@
-package springfive.cms.domain.resources;
+package com.zhong.myapp.doc_service.domain.resources;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,10 +12,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import springfive.cms.domain.models.News;
-import springfive.cms.domain.models.Review;
-import springfive.cms.domain.service.NewsService;
-import springfive.cms.domain.vo.NewsRequest;
+
+import com.zhong.myapp.doc_service.domain.models.News;
+import com.zhong.myapp.doc_service.domain.models.Review;
+import com.zhong.myapp.doc_service.domain.service.NewsService;
+import com.zhong.myapp.doc_service.domain.vo.NewsRequest;
 
 /**
  * @author claudioed on 29/10/17. Project cms

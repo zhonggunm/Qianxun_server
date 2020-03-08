@@ -2,17 +2,19 @@ package springfive.cms.reactor;
 
 import java.util.UUID;
 import org.junit.Test;
+
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.UnicastProcessor;
-import springfive.cms.domain.models.Category;
 
 /**
  * @author claudioed on 27/11/17. Project cms
  */
 public class SimpleReactorExample {
 
+	/*
   @Test
   public void coldBehavior(){
+	  
     Category sports = new Category();
     sports.setName("sports");
     Category music = new Category();
@@ -35,7 +37,7 @@ public class SimpleReactorExample {
   }
 
   @Test
-  public void testHotPublisher(){
+  public void testHotPublisher(){/*
     UnicastProcessor<String> hotSource = UnicastProcessor.create();
     Flux<Category> hotPublisher = hotSource.publish()
         .autoConnect().map((String t) -> Category.builder().name(t).build());
@@ -46,6 +48,7 @@ public class SimpleReactorExample {
     hotSource.onNext("games");
     hotSource.onNext("electronics");
     hotSource.onComplete();
+    
   }
-
+*/
 }

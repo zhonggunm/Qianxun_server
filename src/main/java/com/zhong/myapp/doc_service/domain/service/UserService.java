@@ -1,12 +1,14 @@
-package springfive.cms.domain.service;
+package com.zhong.myapp.doc_service.domain.service;
 
 import java.util.UUID;
 import org.springframework.stereotype.Service;
+
+import com.zhong.myapp.doc_service.domain.models.User;
+import com.zhong.myapp.doc_service.domain.repository.UserRepository;
+import com.zhong.myapp.doc_service.domain.vo.UserRequest;
+
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import springfive.cms.domain.models.User;
-import springfive.cms.domain.repository.UserRepository;
-import springfive.cms.domain.vo.UserRequest;
 
 /**
  * @author claudioed on 29/10/17. Project cms

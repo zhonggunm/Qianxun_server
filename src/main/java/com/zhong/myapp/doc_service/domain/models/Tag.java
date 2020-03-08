@@ -1,4 +1,4 @@
-package springfive.cms.domain.models;
+package com.zhong.myapp.doc_service.domain.models;
 
 import lombok.Data;
 

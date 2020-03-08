@@ -9,27 +9,45 @@
 		<version>2.2.5.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.zhong.myapp</groupId>
-	<artifactId>sql_user_service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>sql_user_service</name>
-	<description>Demo project for Spring Boot</description>
 
+	<groupId>com.zhong.myapp</groupId>
+	<artifactId>doc_service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>doc_service</name>
+	<description>Service for document handling</description>
+	
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
 
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+	<version>1.18.4</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+    </dependency>
+    
+	  <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport-native-epoll</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-webflux</artifactId>
+    </dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -40,25 +58,6 @@
 			<artifactId>junit</artifactId>
 			<version>4.13</version>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.4</version><!--$NO-MVN-MAN-VER$ -->
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>2.7.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.7.0</version>
-		</dependency>
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -74,7 +73,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>sql_user_service</finalName>
+		<finalName>doc_service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -92,7 +91,7 @@
 						<manifest>
 
 							<!-- give full qualified name of your main class -->
-							<mainClass>com.zhong.myapp.sql_user_service.SqlUserServiceApplication</mainClass>
+							<mainClass>com.zhong.myapp.doc_service.DocServiceApplication</mainClass>
 
 						</manifest>
 					</archive>

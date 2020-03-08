@@ -7,6 +7,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.junit.Test;
 
+import com.zhong.myapp.doc_service.domain.models.News;
+import com.zhong.myapp.doc_service.domain.models.User;
+
 /**
  * @author claudioed on 29/10/17. Project cms
  */

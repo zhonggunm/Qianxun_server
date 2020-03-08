@@ -1,4 +1,4 @@
-package springfive.cms.domain.models;
+package com.zhong.myapp.doc_service.domain.models;
 
 import java.util.UUID;
 import lombok.Builder;
@@ -13,10 +13,20 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "categories")
 public class Category {
 
-  @Id
+  public Category(String id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+@Id
   String id;
 
   String name;
+  
+  public Category() {
+	  super();
+  }
 
   @Builder
   public static Category newCategory(String name){
@@ -25,5 +35,21 @@ public class Category {
     category.setName(name);
     return category;
   }
+
+public String getId() {
+	return id;
+}
+
+public void setId(String id) {
+	this.id = id;
+}
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
 
 }

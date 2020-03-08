@@ -1,4 +1,4 @@
-package springfive.cms.domain.resources;
+package com.zhong.myapp.doc_service.domain.resources;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.zhong.myapp.doc_service.domain.models.User;
+import com.zhong.myapp.doc_service.domain.service.UserService;
+import com.zhong.myapp.doc_service.domain.vo.UserRequest;
+
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import springfive.cms.domain.models.User;
-import springfive.cms.domain.service.UserService;
-import springfive.cms.domain.vo.UserRequest;
 
 /**
  * @author claudioed on 29/10/17. Project cms

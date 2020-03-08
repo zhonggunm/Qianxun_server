@@ -1,7 +1,8 @@
-package springfive.cms.domain.service;
+package com.zhong.myapp.doc_service.domain.service;
 
 import org.springframework.stereotype.Service;
-import springfive.cms.domain.repository.NewsRepository;
+
+import com.zhong.myapp.doc_service.domain.repository.NewsRepository;
 
 /**
  * @author claudioed on 29/10/17. Project cms
