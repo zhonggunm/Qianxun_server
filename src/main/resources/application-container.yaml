@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: doc_service
+      host: mongodb
+      port: 27017
